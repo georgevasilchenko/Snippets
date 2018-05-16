@@ -1,3 +1,4 @@
+# taken from 'https://www.humankode.com/asp-net-core/develop-locally-with-https-self-signed-certificates-and-asp-net-core'
 # setup certificate properties including the commonName (DNSName) property for Chrome 58+
 $certificate = New-SelfSignedCertificate `
     -Subject localhost `
