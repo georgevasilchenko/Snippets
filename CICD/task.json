@@ -1,0 +1,32 @@
+{
+    "id": "73FD7B1E-C8E6-4F89-8DFE-2AEE80967C05",
+    "name": "PrintName",
+    "friendlyName": "Print Name",
+    "description": "Prints a name",
+    "category": "Package",
+    "author": "Developer",
+    "version": {
+       "Major": 0,
+       "Minor": 1,
+       "Patch": 0
+    },
+    "minimumAgentVersion": "1.83.0",
+    "inputs": [
+       {
+          "name": "name",
+          "type": "string",
+          "label": "Name",
+          "defaultValue": "",
+          "required": true,
+          "helpMarkDown": "Name to print"
+       }
+    ],
+    "instanceNameFormat": "Print Name $(name)",
+    "execution": {
+       "PowerShell": {
+          "target": "$(currentDirectory)\\Main.ps1",
+          "argumentFormat": "",
+          "workingDirectory": "$(currentDirectory)"
+       }
+    }
+ }
